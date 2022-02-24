@@ -1,0 +1,17 @@
+{
+  "name": "getting-started-esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ts": "esbuild main.ts --bundle --outfile=main.js",
+    "build:css": "esbuild style.css --bundle --minify --outfile=style.min.css",
+    "build:image": "esbuild index.ts --bundle --loader:.png=dataurl --loader:.jpg=file --outfile=index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.23"
+  }
+}
